@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}contact{% endblock title %}
+
+{% block body %}
+<h1 class='TEXT-CENTER my-4'>CONTACT US </h1>
+<div class='container-fluid'>
+    <img src='https://t4.ftcdn.net/jpg/03/51/32/81/360_F_351328144_bTvUCqDyLb6eHXliKcCXiPtVgBPvuTEL.jpg' class='d-block w-100' alt='...'> 
+</div>
+
+<div class='container'>
+  <h1 class='TEXT-CENTER my-4'>GET IN TOUCH</h1>
+  <form method='post' action='/contact'>
+    {% csrf_token %} 
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="enter name ">
+      </div>
+      <div class="form-group my-4">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="enter your email ">
+      </div>
+      <div class="form-group my-4 " >
+        <label for="phone">CONTACT NUMBER</label>
+        <input type="phone" class="form-control" id="phone" name="phone" placeholder="enter your number">
+      </div>
+    <div class="form-group">
+      <label for="desc">Example textarea</label>
+      <textarea class="form-control" id="desc" name='desc' rows="3"></textarea>
+    </div>
+    <button class='btn btn-success mt-3' type='Submit'>SUBMIT</button>
+  </form>
+
+</div>
+{% endblock body %}

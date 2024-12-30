@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}Our Services - Sweet Treats{% endblock title %}
+
+{% block body %}
+<div class="container py-5">
+    <!-- Header Section -->
+    <div class="text-center">
+        <h1 class="display-4 text-primary">Our Services</h1>
+        <p class="lead text-muted">Discover the delightful services we offer at Sweet Treats!</p>
+    </div>
+
+    <!-- Sunday Special Section -->
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <img src="https://www.thespruceeats.com/thmb/3QatTcsVjKeDVCD-rIeUa4fSRAs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/perfect-banana-split-recipe-305712-hero-01-ef0482a539394da0b5ba64ade0c73b98.jpg" 
+                 class="img-fluid rounded shadow" 
+                 alt="Sunday Special Ice Cream">
+        </div>
+        <div class="col-md-6 d-flex align-items-center">
+            <div>
+                <h2 class="text-secondary">Sunday Special Ice Cream</h2>
+                <p>
+                    Indulge in our exclusive Sunday Special Sundae! A heavenly combination of rich chocolate, creamy vanilla, fresh fruits, and a drizzle of caramel that’s perfect for any weekend indulgence.
+                </p>
+                <ul>
+                    <li>Rich and creamy handcrafted ice creams</li>
+                    <li>Topped with seasonal fruits and premium nuts</li>
+                    <li>Available only on Sundays!</li>
+                </ul>
+                <button class="btn btn-primary mt-3">Order Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional Services Section -->
+    <div class="row mt-5">
+        <div class="col-md-12 text-center">
+            <h3 class="text-secondary">Other Services We Offer</h3>
+        </div>
+        <div class="col-md-4 text-center mt-4">
+            <i class="fa fa-birthday-cake fa-3x text-warning"></i>
+            <h5 class="mt-2">Custom Ice Cream Cakes</h5>
+            <p>Perfect for birthdays, anniversaries, and celebrations.</p>
+        </div>
+        <div class="col-md-4 text-center mt-4">
+            <i class="fa fa-shopping-bag fa-3x text-info"></i>
+            <h5 class="mt-2">Takeaway Packs</h5>
+            <p>Take your favorite flavors home in style.</p>
+        </div>
+        <div class="col-md-4 text-center mt-4">
+            <i class="fa fa-coffee fa-3x text-danger"></i>
+            <h5 class="mt-2">Ice Cream & Coffee Pairings</h5>
+            <p>Enjoy a delightful combination of ice cream and coffee.</p>
+        </div>
+    </div>
+</div>
+{% endblock body %}
